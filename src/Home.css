@@ -1,0 +1,229 @@
+.message-display {
+  border: 2px solid rgb(89, 89, 89);
+}
+.current-call {
+  background-color: rgb(253, 213, 213);
+}
+.display-inline {
+  display: inline-block;
+}
+.call-active-button {
+  width: 10vw;
+  margin-bottom: 1vh;
+  color: red;
+}
+.call-button {
+  width: 10vw;
+  margin-bottom: 1vh;
+}
+
+h1{
+  color: whitesmoke;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+h2{
+  background: #8d1f2f;
+  margin-top: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  text-align: center;
+  color: whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: url(back.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+
+.homeContainer{
+    width:300px;
+    height:300px;
+    position: absolute;
+    background: #252c3a;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #962f3f;
+    border-radius: 7px;
+}
+
+.home{
+    position: relative;
+    display: block;
+    background: none;
+    color: whitesmoke;
+    padding: 10px 40px;
+    width: 80%;
+    margin: 10px 10%;
+    font-family: "Arial Narrow";
+    border: 1px solid #962f3f;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+}
+.home:focus{
+    outline:none;
+}
+.home:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,.6);
+    width: 80px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5;
+    filter: blur(28px);
+    transform: translateX(-250px) skewX(-15deg);
+}
+
+.home:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,.9);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(40px);
+    transform: translate(-100px) scaleX(-15deg);
+}
+.home:hover {
+    background: #962f3f;
+    cursor:pointer;
+}
+
+.home:hover:before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .5;
+    transition: .9s;
+}
+
+.home:hover:after {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .9s;
+}
+
+.loginContainer{
+  width:400px;
+  height:335px;
+  position: absolute;
+  background: #252c3a;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #962f3f;
+  border-radius: 7px;
+}
+
+.logRegLabel{
+  color: whitesmoke;
+  margin-left: 17%;
+  margin-top: 5px;
+}
+
+.logRegInput{
+  width:70%;
+  font-size: 16px;
+  margin-left: 15%;
+  position: relative;
+  border: none;
+  padding: 7px 7px;
+  border-radius: 10px;
+  color: rgba(42, 40, 40, 0.777);
+}
+p{
+  color: whitesmoke;
+  margin-left: 17%;
+  margin-top: 5px;
+}
+.redirectP{
+  margin-left: 12%;
+  font-size: 18px;
+}
+
+.redirect{
+  background: none;
+  border: none;
+  color: lightblue;
+  font-size: 18px;
+}
+
+.redirect:hover{
+  color: rgb(145, 172, 182);
+}
+
+.loginButton{
+    transition: .7s;
+    border: 1px solid #962f3f;
+    font-size: 20px;
+    color: whitesmoke;
+    padding: 5px 5px;
+    margin-top: 5px;
+    background: none;
+    width:70%;
+    margin-left: 15%;
+    margin-bottom: 6px;
+    padding: 4px 4px;
+    border-radius: 10px;
+}
+
+.loginButton:hover{
+  background: #962f3f
+}
+
+.registerContainer{
+  width:400px;
+  height:480px;
+  position: absolute;
+  background: #252c3a;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #962f3f;
+  border-radius: 7px;
+}
+
+.footer{
+  width:100%;
+  height:50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #090713;
+  text-align: center;
+  border-top: 1px solid whitesmoke;
+  font-weight: 700;
+  color: #36425a;
+}
+
+.footer button{
+  background: none;
+  border: none;
+  color: #8aa8bd;
+  font-size: 15px;
+  padding: 0px 0px;
+  margin: 15px 20px;
+  font-weight: 100
+}
+
+.footer button:hover{
+  color: #adc3d4;
+}
+
+button:focus {outline:0;}

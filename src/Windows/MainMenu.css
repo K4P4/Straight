@@ -1,0 +1,252 @@
+.container{
+    width:500px;
+    height:300px;
+    position: absolute;
+    background: #252c3a;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #962f3f;
+    border-radius: 7px;
+}
+
+.container table{
+    width: 80%;
+    border: none;
+    margin-left: 10%;
+    text-align: center;
+    border-spacing: 0px;
+}
+
+.container th, tr, td{
+    border: none;
+    border-bottom: 1px solid rgba(44, 50, 63, 1);
+    font-weight: 100;
+    text-align: center;
+}
+
+.container table thead {
+    color: rgb(100, 137, 179);
+}
+
+.container table tbody {
+    color: whitesmoke;
+    background: linear-gradient(90deg, #252c3a 0%, rgba(222,222,222,0.10) 5%, rgba(222,222,222,0.10) 95%, #252c3a 100%);
+}
+
+.container th.username{
+    width: 20%;
+}
+
+.lobbyName{
+    font-size: 20px;
+}
+
+.start{
+    right: 14px;
+    bottom: 14px;
+    position: fixed;
+}
+
+.leave{
+    left: 14px;
+    bottom: 14px;
+    position: fixed;
+    transition: .7s;
+    border: 1px solid #962f3f;
+    font-size: 18px;
+    color: whitesmoke;
+    background: none;
+    width:20%;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+
+.leave:hover{
+    background: #962f3f;
+}
+
+.playerContainer{
+    width:250px;
+    height:122px;
+    margin: 15px 15px;
+    background: #252c3a;
+    border: 1px solid #962f3f;
+    border-radius: 7px;
+}
+
+.avatar{
+    border: 1px solid #962f3f;
+    border-radius: 7px;
+    width:120px;
+    height:120px;
+    position: fixed;
+}
+
+.playerContainer table{
+    border: none;
+    position: absolute;
+    margin-left: 130px;
+}
+
+.playerContainer thead{
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+.playerContainer tbody{
+    font-size: 14px;
+    color: whitesmoke;
+}
+
+.playerContainer tr, td, th{
+    border: none;
+    text-align: left;
+}
+
+.playerContainer td{
+    width: 70px;
+}
+
+.lobbies{
+    width:550px;
+    height:400px;
+    position: absolute;
+    background: #252c3aef;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #962f3f;
+    border-radius: 7px;
+}
+
+.lobbies button{
+    transition: .7s;
+    border: 1px solid #962f3f;
+    font-size: 18px;
+    color: whitesmoke;
+    background: none;
+    border-radius: 7px;
+}
+
+.lobbies button:hover{
+    background: #962f3f;
+}
+
+.lobbies .create{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width:30%;
+}
+
+.lobbies .join{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width:20%;
+}
+
+.lobbies .refresh{
+    position: fixed;
+    bottom: 10px;
+    right: 125px;
+    width:20%;
+}
+
+.lobbies table{
+    border:none;
+    position: block;
+    margin-left: 10%;
+    width: 80%;
+    background-color: none;
+}
+
+.lobbies .requiresPass{
+    width: 5%;
+    font-weight: 50;
+}
+
+.lobbies .plrCount{
+    width: 13%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 50;
+}
+
+.lobbies .lobbyName{
+    width: 85%;
+    font-size: 16px;
+    font-weight: 50;
+}
+
+.lobbies thead tr{
+    color: whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.lobbies tbody{
+    color: #c4bfb5;
+}
+
+.lobbies tbody tr:hover {
+    background-color: #ffffff38;
+    cursor: pointer;
+}
+
+.lobbies .selected{
+    color: #c4bfb5;
+    background-color: rgba(255, 174, 0, 0.157);
+    pointer-events: none;
+}
+
+.selected{
+    color: red;
+}
+
+.pageSelectors button{
+    display: inline-block; 
+    transition: .1s;
+    border: none;
+    font-size: 22px;
+    color: whitesmoke;
+    background: none;
+    padding: 0 0;
+    letter-spacing: -6px;
+    margin-right: 5px;
+    padding-right: 4px;
+}
+
+.pageSelectors button:hover{
+    color: #962f3f;
+    background: none;
+}
+
+.pageSelectors button:disabled{
+    color: rgb(155, 155, 155);
+    background: none;
+}
+
+.pageSelectors{
+    position: absolute;
+    bottom: 40px;
+    left: 10%;
+    width: 80%;
+    border-top: 1px solid whitesmoke;
+    text-align: center;
+}
+
+.pageSelectors input{
+    width: 30px;
+    font-size: 16px;
+    text-align: center;
+    background: none;
+    border: none;
+    color: whitesmoke;
+}
+
+.pageSelectors .slash{
+    font-size: 16px;
+    text-align: center;
+    color: whitesmoke;
+}
