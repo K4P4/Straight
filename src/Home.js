@@ -53,7 +53,7 @@ class Home extends React.Component {
   }
 
   goToHow(){
-    this.setView(0);
+    this.setView(5);
   }
 
   goToTerms(){
@@ -104,6 +104,25 @@ class Home extends React.Component {
             cards={[{ s: 0, r: 0 }, { s: 1, r: 0 }, { s: 2, r: 0 }]}
           />
         );
+      case 5:
+        return (
+          <div className = "rulesContainer">
+            <h2>Game rules:</h2>
+            <ul>
+              <li>Žaidimo raundui prasidėjus kiekvienas žaidėjas gauna po kortą. Žaidėjai gali matyti tik savo kortas.</li>
+              <li>Pirmasis žaidėjas gali sakyti bet kokią pokerio kombinaciją, kuri jo manymu gali susidaryti atvertus visų kitų žaidėjų kortas. (Taip pat galimas blefavimas norint apgauti kitus žaidėjus)</li>
+              <li>Pirmajam žaidėjui pasakius savo kombinaciją, ateina antrojo žaidėjo eilė. Jis jau turi du pasirinkimus:</li>
+              <ul>
+                <li>Sakyti naują kombinaciją, kuri yra aukštesnė nei pirmojo žaidėjo.</li>
+                <li>Tikrinti pirmojo žaidėjo kombinaciją.</li>
+              </ul>
+              <li>Jeigu pasakoma nauja kombinacija, žaidimas analogiškai tęsiasi toliau sekančio žaidėjo ėjimu. Jeigu vyksta tikrinimas, atverčiamos visų žaidėjų kortos. Tikrinimo metu, jei kombinacija, kurią pasakė pirmasis žaidėjas yra ant stalo, tuomet antrasis gauna kortą, jeigu pirmojo žaidėjo kombinacija nesusidaro, tada jis pats gauna kortą.</li>
+              <li>Po tikrinimo kortos atitinkamai per naujo dalinamos žaidėjams, ir raundą pradeda sekantis rate žaidėjas po pralaimėtojo.</li>
+              <li>Žaidėjas, kuris pralaimi keturi kartus (gauna penktąją kortą) iškrenta iš žaidimo.</li>
+              <li>Raundai tęsiasi tol, kol lieka tik vienas žaidėjas.</li>
+            </ul>
+          </div>
+        )
       default:
         return <h1> You are not supposed to be here...</h1>;
     }

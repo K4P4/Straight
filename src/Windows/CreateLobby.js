@@ -1,12 +1,4 @@
 import React, { Component } from "react";
-import {
-  Form,
-  FormGroup,
-  FormLabel,
-  FormControl,
-  Button,
-  FormText
-} from "react-bootstrap";
 import axios from "axios";
 
 class CreateLobby extends Component {
@@ -61,44 +53,36 @@ class CreateLobby extends Component {
 
   render() {
     return (
-      <div>
-        <h1> Create Lobby </h1>
-        <Form onSubmit={this.lobbyView}>
-          <FormGroup>
-            <FormLabel>Lobby name</FormLabel>
-            <FormControl
+      <div className = "registerContainer">
+        <h2> Create Lobby </h2>
+        <form onSubmit={this.lobbyView}>
+            <label className = "logRegLabel">Lobby name</label>
+            <input className = "logRegInput"
               type="text"
               placeholder={this.state.lobby_name}
               name="lobby_name"
-              onChange={this.handleChange}
-            />
-          </FormGroup>
-          <FormGroup>
-            <FormLabel>Password</FormLabel>
-            <FormControl
+              onChange={this.handleChange}/>
+            <label className = "logRegLabel">Password</label>
+            <input className = "logRegInput"
               type="text"
               placeholder="Enter lobby password"
               name="lobby_password"
-              onChange={this.handleChange}
-            />
-            <FormText>
+              onChange={this.handleChange}/>
+              <p>
               Leave the field empty if you don't want to protect the lobby with
               a password
-            </FormText>
-          </FormGroup>
-
-          <Button
-            variant="primary"
+              </p>
+          <button
             type="submit"
             disabled={this.state.disabledButton}
           >
             Create
-          </Button>
-          <Button variant="secondary" onClick={this.mainScreenView}>
+          </button>
+          <button onClick={this.mainScreenView}>
             Back
-          </Button>
-        </Form>
+          </button>
         <p style={{ color: "red" }}>{this.state.message}</p>
+        </form>
       </div>
     );
   }

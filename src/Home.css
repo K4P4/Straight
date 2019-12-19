@@ -56,6 +56,24 @@ body{
     border-radius: 7px;
 }
 
+.rulesContainer{
+    color: whitesmoke;
+    font-size: 18px;
+    width:600px;
+    height:575px;
+    position: absolute;
+    background: #252c3a;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #962f3f;
+    border-radius: 7px;
+}
+
+li{
+  margin-bottom: 10px;
+}
+
 .home{
     position: relative;
     display: block;
